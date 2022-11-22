@@ -1,7 +1,9 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import  './Main.css'
+import "./Main.css";
+import carrot from "../images/carrot.png";
+import Header from "./Header";
 
 const Main = () => {
   const [recipes, setRecipes] = useState([]);
@@ -18,9 +20,9 @@ const Main = () => {
     setRecipes(data.results);
   };
 
-  useEffect(() => {
-    getRecipes();
-  }, [query]);
+  // useEffect(() => {
+  //   getRecipes();
+  // }, [query]);
 
   const updateSearch = (e) => {
     setSearch(e.target.value);
@@ -33,12 +35,8 @@ const Main = () => {
   };
 
   return (
-    <div >
-
-      <div>
-        
-      </div>
-      <form className="search-form" onSubmit={getSearch}>
+    <div>
+        <form className="search-form" onSubmit={getSearch}>
         <input
           className="search-bar"
           type="text"
@@ -49,17 +47,18 @@ const Main = () => {
           Search
         </button>
       </form>
-<div className="grid">
-      {recipes.map((recipe) => {
-        return (
-          <div key={recipe.id} className='card'>
-            <Link to={"/recipe/" + recipe.id}>
-              <h4>{recipe.title}</h4>
-              <img src={recipe.image} alt="" />
-            </Link>
-          </div>
-        );
-      })}
+
+      <div className="grid">
+        {recipes.map((recipe) => {
+          return (
+            <div key={recipe.id} className="card">
+              <Link to={"/recipe/" + recipe.id}>
+                <h4>{recipe.title}</h4>
+                <img src={recipe.image} alt="" />
+              </Link>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

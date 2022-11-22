@@ -1,7 +1,9 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import "./Recipe.css";
+import carrot from "../images/carrot.png";
+
 
 const Recipe = () => {
   const [recipeDetails, setRecipeDetails] = useState({});
@@ -24,10 +26,11 @@ const Recipe = () => {
   }, [params.name]);
 
   return (
-    <div >
+    <div>
       <div className="title">
-      <h2>{recipeDetails.title}</h2>
-      <img src={recipeDetails.image} />
+  
+        <h2>{recipeDetails.title}</h2>
+        <img src={recipeDetails.image} />
       </div>
       <div>
         <button
@@ -53,14 +56,11 @@ const Recipe = () => {
       )}
 
       {activeTab === "ingredients" && (
-      
-          <ul>
-            {recipeDetails.extendedIngredients?.map((ingre) => (
-              <li key={ingre.id}>{ingre.original}</li>
-))}
-          </ul>
-        
-      
+        <ul>
+          {recipeDetails.extendedIngredients?.map((ingre) => (
+            <li key={ingre.id}>{ingre.original}</li>
+          ))}
+        </ul>
       )}
     </div>
   );

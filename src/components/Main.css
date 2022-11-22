@@ -1,6 +1,8 @@
 h4{
     margin: 1rem 0;
     font-size: 1.5rem;
+    color: #1E282F;
+
     }
 
     a{
@@ -10,6 +12,9 @@ h4{
         letter-spacing: .4rem;
     
 
+    }
+    .carrot{
+        width: 40px;
     }
 
     .search-form{
@@ -28,18 +33,21 @@ h4{
         border-radius: 10px;
        border: none;
       width: 50%;
-      margin-right: 20px;
+      margin: 0 20px;
        
 
     }
     
 
 .search-btn{
-    background-color:#B54484;
     font-weight: 700;
     color: white;
     cursor: pointer;
     margin: 0;
+    background-color: #FFA435;
+    border: #FFA435 1px solid;
+    color: #1E282F;
+
 }
 
 .grid{
@@ -68,6 +76,17 @@ width: 350px;
 
     .card img{
         width: 100%;
+    }
+
+    .search-bar{
+
+        padding: 1rem;
+        border-radius: 10px;
+       border: none;
+      width: 60%;
+      margin: 0 20px;
+       
+
     }
 }
     

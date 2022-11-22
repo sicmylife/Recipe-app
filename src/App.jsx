@@ -6,10 +6,8 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <BrowserRouter>
-      
         <Pages />
-      </BrowserRouter>
+    
     </div>
   );
 }
