@@ -1,0 +1,73 @@
+h4{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        color: #1E282F;
+        letter-spacing: .4rem;
+    
+
+    }
+
+    .search-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        max-width: 900px;
+        margin: 20px auto;
+
+    }
+
+    .search-bar{
+
+        padding: 1rem;
+        border-radius: 10px;
+       border: none;
+      width: 50%;
+      margin-right: 20px;
+       
+
+    }
+    
+
+.search-btn{
+    background-color:#B54484;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    margin: 0;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px;
+    justify-content: center;
+
+}
+
+.card{
+width: 350px;
+}
+
+.card img{
+    width: 100%;
+}
+
+@media (max-width:560px){
+    .grid{
+        
+       flex-direction: column;
+       gap: 50px;
+    }
+
+    .card img{
+        width: 100%;
+    }
+}
+    
