@@ -1,15 +1,13 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Main.css";
-import carrot from "../images/carrot.png";
-import Header from "./Header";
+
 
 const Main = () => {
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState("pizza");
-  let params = useParams();
 
   const getRecipes = async () => {
     const res = await fetch(
