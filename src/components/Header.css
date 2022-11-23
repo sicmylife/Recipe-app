@@ -1,11 +1,45 @@
-.container{
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;700;800&family=Roboto:wght@300;400;700&display=swap');
+
+.container-header{
+display: flex;
+justify-content: space-between;
+max-width: 1200px;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Inter', sans-serif;
+height: 100px;
+padding-top: 1rem;
 
 }
 
- .logo{
-    margin-top: 3rem;
+
+.navbar{
+display: flex;
+align-items: center;
+justify-content: center;
+
 }
+
+.navbar a{
+  margin-left: 2rem;
+  font-size: .9rem;
+  letter-spacing: 0;
+  font-weight: 700;
+  display: flex;
+align-items: center;
+gap: 10px;
+  }
+
+  .navbar img{
+width: 30px;
+display: block;
+margin-bottom: 10px;
+    }
+
 
 .logo img{
-  width: 70px;
+  width: 50px;
+}
+
+.logo p{
+  padding-top: 50px;
 }

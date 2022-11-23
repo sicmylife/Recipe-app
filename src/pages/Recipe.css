@@ -50,8 +50,11 @@ img{
 
 
 .active{
-    background-color: #FFA435;
-    border: #FFA435 1px solid;
+    background-color:  #FFA435;
+    color: #faf8f6;
+    border:none;
+    padding:  .8rem 1rem;
+    border-radius: 5px;
 
 }
 

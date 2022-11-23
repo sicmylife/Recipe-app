@@ -1,0 +1,79 @@
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-top: 50px;
+    height: auto;
+    
+
+}
+
+.card{
+width: 300px;
+font-family: 'Roboto', sans-serif;
+font-family: 'Bebas Neue', cursive;
+
+background-color: rgb(252, 230, 199);
+padding: 20px;
+border-radius: 10px;
+/* cursor: pointer; */
+transition: all ease 0.5s;
+color: #1E282F;
+
+
+}
+.card:hover {
+   transform: translateY(-10px);
+   color: white;
+   background-color: #FFA435;
+    
+    }
+
+.card img{
+    width: 100%;
+
+}
+
+h4{
+    margin: 1rem 0;
+    font-size: 1rem;
+    /* color: #1E282F; */
+    letter-spacing: 0;
+
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        color: #1E282F;
+        letter-spacing: .4rem;
+    
+
+    }
+
+
+@media (max-width:560px){
+    .grid{
+        
+       flex-direction: column;
+       gap: 50px;
+    }
+
+    .card img{
+        width: 100%;
+    }
+
+    .search-bar{
+
+        padding: 1rem;
+        border-radius: 10px;
+       border: none;
+      width: 60%;
+      margin: 0 20px;
+       
+
+    }
+}
+    

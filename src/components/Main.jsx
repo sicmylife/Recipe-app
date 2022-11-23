@@ -20,9 +20,9 @@ const Main = () => {
     setRecipes(data.results);
   };
 
-  // useEffect(() => {
-  //   getRecipes();
-  // }, [query]);
+  useEffect(() => {
+    getRecipes();
+  }, [query]);
 
   const updateSearch = (e) => {
     setSearch(e.target.value);
@@ -42,6 +42,7 @@ const Main = () => {
           type="text"
           value={search}
           onChange={updateSearch}
+          placeholder='Find recipe'
         />
         <button className="search-btn" type="submit">
           Search
