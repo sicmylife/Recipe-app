@@ -3,6 +3,7 @@
 .container-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 1200px;
   font-family: "Bebas Neue", cursive;
   font-family: "Inter", sans-serif;
