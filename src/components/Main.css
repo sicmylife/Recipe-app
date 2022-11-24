@@ -72,6 +72,7 @@ width: 350px;
         
        flex-direction: column;
        gap: 50px;
+       width: 360px;
     }
 
     .card img{
