@@ -11,16 +11,16 @@ const Main = () => {
 
   const getRecipes = async () => {
     const res = await fetch(
-      ` https://api.spoonacular.com/recipes/complexSearch?apiKey=8e6e8a67bccb4d3b978a39d440bdf3c0&number=2&query=${query}`
+      ` https://api.spoonacular.com/recipes/complexSearch?apiKey=8e6e8a67bccb4d3b978a39d440bdf3c0&number=8&query=${query}`
     );
     const data = await res.json();
     console.log(data.results);
     setRecipes(data.results);
   };
 
-  useEffect(() => {
-    getRecipes();
-  }, [query]);
+  // useEffect(() => {
+  //   getRecipes();
+  // }, [query]);
 
   const updateSearch = (e) => {
     setSearch(e.target.value);

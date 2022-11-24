@@ -1,0 +1,31 @@
+.Navbar .MobileNavigation{
+    display: none;
+}
+
+@media(max-width:960px){
+
+  .Navbar {
+
+  }
+    .Navbar .Navigation{
+        display: none;
+    }
+    .Navbar .MobileNavigation{
+        display: flex;
+        align-items: center;
+
+    }
+    .Navbar .MobileNavigation .hamburger{
+      position: absolute;
+      right: 20px;
+      cursor: pointer;
+      color: black;
+      z-index: 10;
+      top: 50px;
+
+    }
+    .navbar {
+       display: block;
+  
+      }
+}
