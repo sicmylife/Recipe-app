@@ -18,9 +18,9 @@ const Main = () => {
     setRecipes(data.results);
   };
 
-  // useEffect(() => {
-  //   getRecipes();
-  // }, [query]);
+  useEffect(() => {
+    getRecipes();
+  }, [query]);
 
   const updateSearch = (e) => {
     setSearch(e.target.value);
