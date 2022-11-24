@@ -38,13 +38,12 @@ color:#FFA435 ;
   margin-bottom: 10px;
 }
 
+
 .logo img {
   width: 50px;
 }
 
-.logo p {
-  padding-top: 50px;
-}
+
 
 @media (max-width: 960px) {
   .navbar {
